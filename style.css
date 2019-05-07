@@ -3541,6 +3541,75 @@ body.page .main-navigation {
   overflow: hidden;
 }
 
+/* animation */
+.hvr-grow {
+  display: inline-block;
+  vertical-align: middle;
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  transition-duration: 0.3s;
+  transition-property: transform;
+}
+
+.hvr-grow:hover,
+.hvr-grow:focus,
+.hvr-grow:active {
+  transform: scale(1.1);
+}
+
+@keyframes point {
+  17% {
+    background-position: 0 0;
+  }
+  34% {
+    background-position: 0 -7px;
+  }
+  51% {
+    background-position: 0 -14px;
+  }
+  68% {
+    background-position: 0 -21px;
+  }
+  85% {
+    background-position: 0 -28px;
+  }
+  100% {
+    background-position: 0 -35px;
+  }
+}
+
+@keyframes pulse {
+  from {
+    transform: scale3d(0.5, 0.5, 0.5);
+  }
+  50% {
+    transform: scale3d(1, 1, 1);
+  }
+  to {
+    transform: scale3d(0.5, 0.5, 0.5);
+  }
+}
+
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    -webkit-transform: scale3d(0.3, 0.3, 0.3);
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes zoom {
+  from {
+    transform: scale3d(1, 1, 1);
+  }
+  100% {
+    transform: scale3d(1.2, 1.2, 1.2);
+  }
+}
+
 /* Content */
 .site-header {
   width: 100%;
@@ -3563,6 +3632,65 @@ body.page .main-navigation {
 .site-logo {
   height: 77px;
   overflow: hidden;
+}
+
+.col-server {
+  width: 100%;
+  height: 662px;
+  padding-top: 80px;
+  background: url("images/ibg_1.jpg") center 0 no-repeat;
+}
+
+.col-server .tit {
+  height: 80px;
+  background: url("images/tit_1.png") center 0 no-repeat;
+  margin-bottom: 50px;
+}
+
+.col-server .con {
+  width: 1200px;
+  height: 288px;
+  position: relative;
+  margin: 0 auto 50px auto;
+  background: url("images/con_1.png") center 0 no-repeat;
+}
+
+.col-server .con .point {
+  width: 101px;
+  height: 7px;
+  overflow: hidden;
+  position: absolute;
+  top: 168px;
+  background-image: url("images/point.png");
+  background-repeat: no-repeat;
+  animation: point 1s steps(1) 0s infinite both;
+}
+
+.col-server .con .point-1 {
+  left: 145px;
+}
+
+.col-server .con .point-2 {
+  left: 412px;
+}
+
+.col-server .con .point-3 {
+  left: 685px;
+}
+
+.col-server .con .point-4 {
+  left: 953px;
+}
+
+.col-server .btn {
+  text-align: center;
+}
+
+.col-server .btn a {
+  width: 291px;
+  height: 65px;
+  display: inline-block;
+  background: url("images/btn_1.png") center 0 no-repeat;
 }
 
 .page-archive {

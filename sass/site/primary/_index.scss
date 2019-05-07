@@ -1,0 +1,49 @@
+.col-server {
+  width: 100%;
+    height: 662px;
+    padding-top: 80px;
+    background: url("images/ibg_1.jpg") center 0 no-repeat;
+    .tit {
+      height: 80px;
+      background: url("images/tit_1.png") center 0 no-repeat;
+      margin-bottom: 50px;
+    }
+    .con {
+      width: 1200px;
+      height: 288px;
+      position: relative;
+      margin: 0 auto 50px auto;
+      background: url("images/con_1.png") center 0 no-repeat;
+      .point {
+        width: 101px;
+        height: 7px;
+        overflow: hidden;
+        position: absolute;
+        top: 168px;
+        background-image: url("images/point.png");
+        background-repeat: no-repeat;
+        animation: point 1s steps(1) 0s infinite both;
+      }
+      .point-1 {
+        left: 145px;
+      }
+      .point-2 {
+        left: 412px;
+      }
+      .point-3 {
+        left: 685px;
+      }
+      .point-4 {
+        left: 953px;
+      }
+    }
+    .btn {
+      text-align: center;
+      a {
+        width: 291px;
+        height: 65px;
+        display: inline-block;
+        background: url("images/btn_1.png") center 0 no-repeat;
+      }
+    }
+}

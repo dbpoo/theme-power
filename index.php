@@ -23,7 +23,7 @@ get_header();
 		echo do_shortcode('[smartslider3 slider=1]');
 		?>
 		<div class="col-server">
-			<div class="tit">新能源资产价值流通服务</div>
+			<div class="tit"></div>
 			<div class="con">
 				<div class="point point-1"></div>
 				<div class="point point-2"></div>

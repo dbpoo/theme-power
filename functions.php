@@ -231,6 +231,8 @@ function twentynineteen_scripts() {
 	// }
 
 	// wp_enqueue_style( 'twentynineteen-print-style', get_template_directory_uri() . '/print.css', array(), wp_get_theme()->get( 'Version' ), 'print' );
+	wp_enqueue_style( 'twentynineteen-swiper-style', get_template_directory_uri() . '/swiper.min.css', array(), wp_get_theme()->get( 'Version' ), 'swiper' );
+	wp_enqueue_script( 'twentynineteen-swiper-js', get_theme_file_uri( '/js/swiper.min.js' ), array(), '1.1', true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
