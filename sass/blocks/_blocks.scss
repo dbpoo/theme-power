@@ -2,13 +2,13 @@
 
 .entry .entry-content > *,
 .entry .entry-summary > * {
-	margin: 32px 0;
+	margin: 10px 0;
 	max-width: 100%;
 
 	@include postContentMaxWidth();
 
 	@include media(tablet) {
-		margin: 32px 0;
+		margin: 10px 0;
 	}
 
 	> *:first-child {

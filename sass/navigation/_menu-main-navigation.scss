@@ -3,7 +3,7 @@
 .main-navigation {
 
 	display: block;
-	margin-top: #{0.25 * $size__spacing-unit};
+	font-size: 18px;
 
 	body.page & {
 		display: block;
@@ -60,17 +60,13 @@
 
 			> a {
 
-				font-weight: 700;
-				color: $color__link;
-				margin-right: #{0.5 * $size__spacing-unit};
-
-				+ svg {
-					margin-right: #{0.5 * $size__spacing-unit};
-				}
+				font-weight: normal;
+				color: #fff;
+				margin: 0 #{0.5 * $size__spacing-unit};
 
 				&:hover,
 				&:hover + svg {
-					color: $color__link-hover;
+					color: $color__link;
 				}
 			}
 

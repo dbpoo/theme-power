@@ -44,7 +44,7 @@ h3,
 h4,
 h5,
 h6 {
-	font-weight: 700;
+	font-weight: normal;
 	letter-spacing: -0.02em;
 	line-height: $font__line-height-heading;
 	-webkit-font-smoothing: antialiased;
@@ -92,7 +92,6 @@ h3 {
 
 .site-title,
 .site-description,
-.main-navigation,
 .nav-links,
 .page-title,
 .page-description,
