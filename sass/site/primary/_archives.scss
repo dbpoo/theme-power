@@ -1,6 +1,6 @@
 .page-archive {
   height: 473px;
-  background: url(./images/newsbanner.jpg) center 0 no-repeat;
+  background: url("images/newsbanner.jpg") center 0 no-repeat;
   background-size: cover;
   display: flex;
   justify-content: center;
@@ -11,7 +11,7 @@
 .archive-wrapper {
   padding-top: 268px;
   padding-bottom: 80px;
-  background: url(./images/newsbg.jpg) center 0 no-repeat;
+  background: url("images/newsbg.jpg") center 0 no-repeat;
   background-size: cover;
   .post {
     width: 1200px;
@@ -35,6 +35,7 @@
     .post-info {
       width:100%;
       .entry-header{
+        width: 100%;
         margin-top: 20px;
         h2  {
           font-size: 24px;
@@ -42,10 +43,12 @@
       }
       .entry-content {
         width: 660px;
+        min-height: 80px;
         font-size: 18px;
         color: #878787;
       }
       .entry-footer {
+        width: 100%;
         font-size: 12px;
         color: #878787;
       }

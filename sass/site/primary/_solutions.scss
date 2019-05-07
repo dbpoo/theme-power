@@ -1,0 +1,94 @@
+.solutions {
+  min-width: 1200px;
+  .banner {
+    height: 396px;
+    background: url("images/cbanner_solutions.jpg") center 0 no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    h2 {
+      width: 920px;
+      font-size: 60px;
+      text-align: center;
+      color: #fff;
+    }
+  }
+  .solution-flex {
+    width: 1200px;
+    height: 436px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .solutions-1 {
+    height: 437px;
+    background-color: #fff;
+    .sotxt{
+      width: 667px;
+      height: 225px;
+      background: url("images/solutions_1.jpg") 0 0 no-repeat;
+    }
+    .sohover {
+      width: 273px;
+      height: 273px;
+      background: url("images/solutions_1s.jpg") 0 0 no-repeat;
+    }
+  }
+  .solutions-2 {
+    height: 437px;
+    background-color: #f9f9f9;
+    .sotxt{
+      width: 667px;
+      height: 278px;
+      background: url("images/solutions_2.jpg") 0 0 no-repeat;
+    }
+    .sohover {
+      width: 273px;
+      height: 273px;
+      background: url("images/solutions_2s.jpg") 0 0 no-repeat;
+    }
+  }
+  .solutions-3 {
+    height: 437px;
+    background-color: #fff;
+    .sotxt{
+      width: 667px;
+      height: 252px;
+      background: url("images/solutions_3.jpg") 0 0 no-repeat;
+    }
+    .sohover {
+      width: 273px;
+      height: 273px;
+      background: url("images/solutions_3s.jpg") 0 0 no-repeat;
+    }
+  }
+  .solutions-4 {
+    height: 437px;
+    background-color: #f9f9f9;
+    .sotxt{
+      width: 667px;
+      height: 282px;
+      background: url("images/solutions_4.jpg") 0 0 no-repeat;
+    }
+    .sohover {
+      width: 273px;
+      height: 273px;
+      background: url("images/solutions_4s.jpg") 0 0 no-repeat;
+    }
+  }
+  .solutions-5 {
+    height: 437px;
+    background-color: #fff;
+    .sotxt{
+      width: 667px;
+      height: 306px;
+      background: url("images/solutions_5.jpg") 0 0 no-repeat;
+    }
+    .sohover {
+      width: 273px;
+      height: 273px;
+      background: url("images/solutions_5s.jpg") 0 0 no-repeat;
+    }
+  }
+}
