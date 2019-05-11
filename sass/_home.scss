@@ -7,37 +7,6 @@
     .bannerSwiperM {
       display: none;
     }
-    .slide-img {
-      width: 100%;
-      height: 900px;
-      padding-bottom: 160px;
-      display: block;
-      background-position: center 0;
-      background-repeat: no-repeat;
-      background-size: cover;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      .slide-info {
-        color: #fff;
-        font-size: 30px;
-        text-align: center;
-        letter-spacing: 15px;
-      }
-    }
-    .swiper-pagination {
-      bottom: 33px;
-    }
-    .swiper-pagination-bullet {
-      width: 17px;
-      height: 17px;
-      margin: 0 10px;
-      background: #c0c0c0;
-      opacity: 1;
-    }
-    .swiper-pagination-bullet-active {
-      background: #2fccf6;
-    }
     .banner-btn,
     .banner-btn-m {
       max-width: 1200px;
@@ -458,9 +427,6 @@
 }
 
 @media screen and (max-width: 1440px) {
-  .home .banner-swiper .slide-img {
-    height: 700px;
-  }
   .home .banner-swiper .banner-btn {
     width: 900px;
     margin-left: -450px;
@@ -481,9 +447,7 @@
       display: block;
     }
   }
-  .home .banner-swiper .slide-img {
-    height: 600px;
-  }
+
   .home .banner-swiper .banner-btn {
     display: none;
   }

@@ -36,8 +36,14 @@
         background: url("./images/close.png") center center no-repeat;
       }
     }
-    ul.menu {
-      display: flex;
+    .nav-menu {
+      display: none;
+      position: absolute;
+      top: 77px;
+      left: 0;
+      width: 100%;
+      height: 100vh;
+      background-color: rgba(0, 0, 0, 0.8);
       li {
         a {
           margin: 0 20px;
@@ -74,20 +80,16 @@
       .nav-swith {
         display: block;
       }
-      .nav-link {
-        position: absolute;
-        top: 77px;
-        left: 0;
-        width: 100%;
-        height: 100vh;
-        background-color: rgba(0, 0, 0, 0.8);
-        display: flex;
-        flex-direction: column;
-        a {
-          margin: 0;
-          padding: 0 20px;
-          height: 60px;
-          line-height: 60px;
+      .nav-menu {
+        ul.menu {
+          display: flex;
+          flex-direction: column;
+          a {
+            margin: 0;
+            padding: 0 20px;
+            height: 60px;
+            line-height: 60px;
+          }
         }
       }
     }

@@ -1,0 +1,21 @@
+.metaslider img {
+  height: 900px !important;
+}
+
+.metaslider.ms-theme-outline .rslides .caption-wrap {
+  bottom: 50% !important;
+  transform: translate(0, -50%);
+  background: none !important;
+  opacity: 1!important;
+  .caption {
+    font-size: 40px !important;
+    color: #fff!important;
+    line-height: 1.5;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .metaslider img {
+    height: 600px !important;
+  }
+}

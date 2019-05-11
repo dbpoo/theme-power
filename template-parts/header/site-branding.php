@@ -14,12 +14,13 @@
 		</div>
 	<?php endif; ?>
 
-	<!-- <div class="nav-swith">
-					<span class="swith-on" v-show="!isShow" @click="toggleMenu"></span>
-					<span class="swith-off" v-show="isShow" @click="toggleMenu"></span>
-				</div> -->
-	<?php if (has_nav_menu('menu-1')) : ?>
-		<?php
+	<div class="nav-swith">
+		<span class="swith-icon swith-on"></span>
+		<span class="swith-icon swith-off" style="display:none;"></span>
+	</div>
+	<div class="nav-menu" style="display:none;">
+		<?php if (has_nav_menu('menu-1')) : ?>
+			<?php
 			wp_nav_menu(
 				array(
 					'theme_location' => 'menu-1',
@@ -27,6 +28,7 @@
 					'items_wrap'     => '<ul id="%1$s" class="%2$s">%3$s</ul>',
 				)
 			);
-		?>
-	<?php endif; ?>
+			?>
+		<?php endif; ?>
+	</div>
 </div>

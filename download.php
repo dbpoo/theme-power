@@ -12,7 +12,7 @@ get_header();
 			<br>系统解决方案提供商
 		</h2>
 		<div class="download-btn">
-			<a href="javascript:;" @click="toast"></a>
+			<a href="javascript:;"></a>
 		</div>
 	</div>
 	<div class="download-1">
