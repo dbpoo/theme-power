@@ -1123,32 +1123,30 @@ html::-webkit-scrollbar-thumb {
   background: url("./images/close.png") center center no-repeat;
 }
 
-.nav .nav-flex .nav-menu {
-  display: none;
-  position: absolute;
-  top: 77px;
-  left: 0;
+.nav .nav-flex .nav-menu ul {
   width: 100%;
-  height: 100vh;
-  background-color: rgba(0, 0, 0, 0.8);
 }
 
-.nav .nav-flex .nav-menu li a {
+.nav .nav-flex .nav-menu ul li {
+  float: left;
+}
+
+.nav .nav-flex .nav-menu ul li a {
   margin: 0 20px;
   color: #fff;
   font-weight: bold;
   cursor: pointer;
 }
 
-.nav .nav-flex .nav-menu li a:hover {
+.nav .nav-flex .nav-menu ul li a:hover {
   color: #29acf1;
 }
 
-.nav .nav-flex .nav-menu li a:last-child {
+.nav .nav-flex .nav-menu ul li a:last-child {
   margin-right: 0;
 }
 
-.nav .nav-flex .nav-menu li.current-menu-item a {
+.nav .nav-flex .nav-menu ul li.current-menu-item a {
   font-weight: bold;
   color: #29acf1;
 }
@@ -1163,6 +1161,14 @@ html::-webkit-scrollbar-thumb {
   }
   .nav .nav-flex .nav-swith {
     display: block;
+  }
+  .nav .nav-flex .nav-menu {
+    position: absolute;
+    top: 77px;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8);
   }
   .nav .nav-flex .nav-menu ul.menu {
     display: flex;

@@ -73,17 +73,15 @@ get_header();
         </div>
         <div class="newsc-list">
           <?php
-          $sticky = get_option('sticky_posts');
-          rsort($sticky);
-          $sticky = array_slice($sticky, 0, 3);
-          query_posts(array('post__in' => $sticky, 'caller_get_posts' => 1));
-          if (have_posts()) : while (have_posts()) : the_post();
-              ?>
-
-              <li><a href="<?php the_permalink(); ?>" target="_blank"><?php the_title(); ?></a></li>
-
-            <?php endwhile;
-        endif; ?>
+          $recent_posts = wp_get_recent_posts(array(
+            'numberposts' => 3, // Number of recent posts thumbnails to display
+            'post_status' => 'publish' // Show only the published posts
+          ));
+          foreach ($recent_posts as $post) {
+            echo '<div class="item"><dl><dd class="dd1">'. date('d',strtotime($post["post_date"])) .'</dd><dd class="dd2">'. date('Y-m',strtotime($post["post_date"])) .'</dd></dl><ul><li class="li1"><a href="' . get_permalink($post["ID"]) . '">' . esc_html($post["post_title"]) . '</a></li><li class="li2">' . wp_trim_words($post["post_content"], 50) . '</li></ul></div>';
+          }
+          wp_reset_query();
+          ?>
         </div>
       </div>
     </div>

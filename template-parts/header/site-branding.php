@@ -18,7 +18,7 @@
 		<span class="swith-icon swith-on"></span>
 		<span class="swith-icon swith-off" style="display:none;"></span>
 	</div>
-	<div class="nav-menu" style="display:none;">
+	<div class="nav-menu">
 		<?php if (has_nav_menu('menu-1')) : ?>
 			<?php
 			wp_nav_menu(
