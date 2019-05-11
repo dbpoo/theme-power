@@ -11,14 +11,26 @@
 
 ?>
 
-<?php
-$sticky = get_option('sticky_posts');
-rsort( $sticky );
-$sticky = array_slice( $sticky, 0, 3);
-query_posts( array( 'post__in' => $sticky, 'caller_get_posts' => 1 ) );
-if (have_posts()) :while (have_posts()) : the_post();
-?>
- 
-<li><a href="<?php the_permalink(); ?>" target="_blank"><?php the_title(); ?></a></li>
- 
-<?php endwhile; endif; ?>
+<div class="news-tit">
+	<?php
+	the_title();
+	?>
+</div>
+<div class="news-con">
+	<?php
+	the_content(
+		sprintf(
+			wp_kses(
+				/* translators: %s: Name of current post. Only visible to screen readers */
+				__('Continue reading<span class="screen-reader-text"> "%s"</span>', 'twentynineteen'),
+				array(
+					'span' => array(
+						'class' => array(),
+					),
+				)
+			),
+			get_the_title()
+		)
+	);
+	?>
+</div>

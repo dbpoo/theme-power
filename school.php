@@ -65,7 +65,7 @@ get_header();
 		</div>
 	</div>
 	<div class="school-2m">
-		<img src="<?php bloginfo('template_url') ?>/school2m.jpg" alt="">
+		<img src="<?php bloginfo('template_url') ?>/images/school2m.jpg" alt="">
 	</div>
 	<div class="school-3">
 		<div class="tit">
