@@ -18,17 +18,15 @@
 					<span class="swith-on" v-show="!isShow" @click="toggleMenu"></span>
 					<span class="swith-off" v-show="isShow" @click="toggleMenu"></span>
 				</div> -->
-	<div class="nav-link">
-		<?php if (has_nav_menu('menu-1')) : ?>
-			<?php
+	<?php if (has_nav_menu('menu-1')) : ?>
+		<?php
 			wp_nav_menu(
 				array(
 					'theme_location' => 'menu-1',
-					'menu_class'     => 'main-menu',
+					'menu_class'     => 'menu',
 					'items_wrap'     => '<ul id="%1$s" class="%2$s">%3$s</ul>',
 				)
 			);
-			?>
-		<?php endif; ?>
-	</div>
+		?>
+	<?php endif; ?>
 </div>

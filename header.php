@@ -22,7 +22,7 @@
 	<?php wp_head(); ?>
 </head>
 
-<body>
+<body <?php body_class(); ?>>
 	<div id="app">
 		<div class="nav">
 			<?php get_template_part('template-parts/header/site', 'branding'); ?>
