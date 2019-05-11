@@ -48,7 +48,7 @@ get_header();
       <div class="point point-4"></div>
     </div>
     <div class="conm">
-      <img src="./wp-content/themes/power/images/con_1m.png" alt="">
+      <img src="<?php bloginfo('template_url') ?>/images/con_1m.png" alt="">
     </div>
     <div class="btn">
       <router-link to="/solutions"></router-link>
@@ -72,42 +72,7 @@ get_header();
           </ul>
         </div>
         <div class="newsc-list">
-          <div class="item">
-            <dl>
-              <dd class="dd1">09</dd>
-              <dd class="dd2">2019-05</dd>
-            </dl>
-            <ul>
-              <li class="li1"><a href="javascript:;">复牌!江山控股4.13亿元向国投电力出售湖州100兆瓦太阳能发电厂</a></li>
-              <li class="li2">
-                <p>江山控股公布，2019年4月29日，公司的间接全资附属江山永泰投资控股有限公司拟向国投电力控股股份有限公司出售 […]</p>
-              </li>
-            </ul>
-          </div>
-          <div class="item">
-            <dl>
-              <dd class="dd1">07</dd>
-              <dd class="dd2">2019-05</dd>
-            </dl>
-            <ul>
-              <li class="li1"><a href="javascript:;">19022千瓦宁夏下发“十三五”第二批光伏扶贫项目计划</a></li>
-              <li class="li2">
-                <p>日前，宁夏发改委下发了“十三五”第二批光伏扶贫项目计划，本次国家能源局、国务扶贫办下达我区1个县光伏扶贫项目， […]</p>
-              </li>
-            </ul>
-          </div>
-          <div class="item">
-            <dl>
-              <dd class="dd1">07</dd>
-              <dd class="dd2">2019-05</dd>
-            </dl>
-            <ul>
-              <li class="li1"><a href="javascript:;">通威太阳能PK爱旭科技三分钟对比两大PERC电池厂商核心指标</a></li>
-              <li class="li2">
-                <p>2018年，我国电池片产量约87.2GW，而寡头时代的特征而言更加明显：电池片产量超2GW的企业有12家，占总 […]</p>
-              </li>
-            </ul>
-          </div>
+          
         </div>
       </div>
     </div>
@@ -137,12 +102,12 @@ get_header();
     </div>
     <div class="con">
       <ul>
-        <li class="hvr-grow hvr-grow0"><img src="./wp-content/themes/power/images/card_1.jpg" alt="" srcset=""></li>
-        <li class="hvr-grow hvr-grow1"><img src="./wp-content/themes/power/images/card_2.jpg" alt="" srcset=""></li>
-        <li class="hvr-grow hvr-grow2"><img src="./wp-content/themes/power/images/card_3.jpg" alt="" srcset=""></li>
-        <li class="hvr-grow hvr-grow3"><img src="./wp-content/themes/power/images/card_4.jpg" alt="" srcset=""></li>
-        <li class="hvr-grow hvr-grow4"><img src="./wp-content/themes/power/images/card_5.jpg" alt="" srcset=""></li>
-        <li class="hvr-grow hvr-grow5"><img src="./wp-content/themes/power/images/card_6.jpg" alt="" srcset=""></li>
+        <li class="hvr-grow hvr-grow0"><img src="<?php bloginfo('template_url') ?>/images/card_1.jpg" alt="" srcset=""></li>
+        <li class="hvr-grow hvr-grow1"><img src="<?php bloginfo('template_url') ?>/images/card_2.jpg" alt="" srcset=""></li>
+        <li class="hvr-grow hvr-grow2"><img src="<?php bloginfo('template_url') ?>/images/card_3.jpg" alt="" srcset=""></li>
+        <li class="hvr-grow hvr-grow3"><img src="<?php bloginfo('template_url') ?>/images/card_4.jpg" alt="" srcset=""></li>
+        <li class="hvr-grow hvr-grow4"><img src="<?php bloginfo('template_url') ?>/images/card_5.jpg" alt="" srcset=""></li>
+        <li class="hvr-grow hvr-grow5"><img src="<?php bloginfo('template_url') ?>/images/card_6.jpg" alt="" srcset=""></li>
       </ul>
     </div>
     <div class="btn" style="display:none;">

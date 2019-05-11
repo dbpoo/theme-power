@@ -1,0 +1,350 @@
+.school-wrapper {
+  .banner {
+    height: 473px;
+    padding-top: 77px;
+    background: url("./images/cbanner_school.jpg") center 0 no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    h2 {
+      width: 920px;
+      font-size: 60px;
+      text-align: center;
+      color: #fff;
+    }
+  }
+  .school-1 {
+    height: 700px;
+    background: url("./images/schoolbg_1.jpg") center 0 no-repeat;
+    padding-top: 60px;
+    .con {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding-left: 310px;
+      color: #747474;
+      font-size: 24px;
+      text-indent: 48px;
+      p {
+        margin-bottom: 15px;
+      }
+    }
+  }
+  .school-2 {
+    height: 1237px;
+    background: url("./images/schoolbg_2.jpg") center 0 no-repeat;
+    .con {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      ul {
+        width: 385px;
+        height: 402px;
+        background-color: rgba(255, 255, 255, 0.6);
+        li.li1 {
+          padding-top: 180px;
+          padding-bottom: 20px;
+          text-align: center;
+          font-size: 26px;
+          color: #555454;
+        }
+        li.li2 {
+          font-size: 20px;
+          color: #747474;
+          padding: 0 20px;
+        }
+      }
+      ul.ul1 {
+        background-image: url(./images/schoolicon_1.png);
+        background-repeat: no-repeat;
+        background-position: center 30px;
+      }
+      ul.ul2 {
+        background-image: url(./images/schoolicon_2.png);
+        background-repeat: no-repeat;
+        background-position: center 30px;
+      }
+      ul.ul3 {
+        background-image: url(./images/schoolicon_3.png);
+        background-repeat: no-repeat;
+        background-position: center 30px;
+      }
+      ul.ul4 {
+        background-image: url(./images/schoolicon_4.png);
+        background-repeat: no-repeat;
+        background-position: center 30px;
+      }
+      ul.ul5 {
+        background-image: url(./images/schoolicon_5.png);
+        background-repeat: no-repeat;
+        background-position: center 30px;
+      }
+      ul.ul6 {
+        background-image: url(./images/schoolicon_6.png);
+        background-repeat: no-repeat;
+        background-position: center 30px;
+      }
+    }
+  }
+  .school-2m {
+    display: none;
+    img {
+      width: 100%;
+    }
+  }
+  .school-3 {
+    height: 856px;
+    padding-top: 45px;
+    .con {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+      ul {
+        width: 50%;
+        height: 290px;
+        li.li1 {
+          text-align: center;
+          display: flex;
+          flex-wrap: wrap;
+          align-items: center;
+          flex-direction: column;
+          margin-bottom: 10px;
+          font-size: 26px;
+          color: #484848;
+          transition: 0s all;
+          span {
+            width: 120px;
+            height: 120px;
+            display: inline-block;
+            margin-bottom: 10px;
+            font-size: 26px;
+          }
+          i {
+            display: block;
+            text-align: center;
+          }
+        }
+        li.li2 {
+          padding: 0 80px;
+          font-size: 20px;
+          color: #747474;
+        }
+        &:hover {
+          color: #fff;
+          background: url("./images/siconbg.jpg") center 0 no-repeat;
+          li.li1 {
+            color: #fff;
+          }
+          li.li2 {
+            color: #fff;
+          }
+        }
+      }
+      ul.ul1 {
+        li.li1 span {
+          transition: 0s all;
+          background: url("./images/sicon_1.png") center 0 no-repeat;
+        }
+        &:hover {
+          li.li1 span {
+            background-position: 0 -120px;
+          }
+        }
+      }
+      ul.ul2 {
+        li.li1 span {
+          transition: 0s all;
+          background: url("./images/sicon_2.png") center 0 no-repeat;
+        }
+        &:hover {
+          li.li1 span {
+            background-position: 0 -120px;
+          }
+        }
+      }
+      ul.ul3 {
+        li.li1 span {
+          transition: 0s all;
+          background: url("./images/sicon_3.png") center 0 no-repeat;
+        }
+        &:hover {
+          li.li1 span {
+            background-position: 0 -120px;
+          }
+        }
+      }
+      ul.ul4 {
+        li.li1 span {
+          transition: 0s all;
+          background: url("./images/sicon_4.png") center 0 no-repeat;
+        }
+        &:hover {
+          li.li1 span {
+            background-position: 0 -120px;
+          }
+        }
+      }
+    }
+  }
+  .school-4 {
+    height: 883px;
+    padding-top: 60px;
+    background: url("./images/schoolbg_3.jpg") center 0 no-repeat;
+    .con {
+      max-width: 1050px;
+      margin: 0 auto;
+      font-size: 24px;
+      color: #747474;
+      line-height: 1.6;
+      text-align: center;
+    }
+    .school-swiper {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 80px 50px 100px 50px;
+      position: relative;
+      .swiper-slide {
+        width: 687px;
+        ul {
+          li.li1 {
+            width: 100%;
+            img {
+              width: 100%;
+            }
+          }
+          li.li2 {
+            display: none;
+          }
+        }
+      }
+      .swiper-slide-prev,
+      .swiper-slide-next {
+        width: 687px;
+        overflow: hidden;
+        margin-bottom: -100px;
+      }
+      .swiper-slide-active {
+        ul {
+          li.li2 {
+            display: block;
+            text-align: center;
+          }
+        }
+      }
+      .swiper-container-3d .swiper-slide-shadow-left {
+        background-image: linear-gradient(
+          to left,
+          rgba(255, 255, 255, 0.8),
+          rgba(255, 255, 255, 0)
+        );
+      }
+      .swiper-container-3d .swiper-slide-shadow-right {
+        background-image: linear-gradient(
+          to right,
+          rgba(255, 255, 255, 0.8),
+          rgba(255, 255, 255, 0)
+        );
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .school-wrapper {
+    .banner {
+      height: 340px;
+      h2 {
+        width: 100%;
+        font-size: 20px;
+      }
+    }
+    .school-1 {
+      height: auto;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      background: #fff;
+      .tit {
+        margin-bottom: 20px;
+      }
+      .con {
+        padding: 0 20px;
+        font-size: 14px;
+        text-indent: 28px;
+      }
+    }
+    .school-2 {
+      display: none;
+    }
+    .school-2m {
+      display: block;
+    }
+    .school-3 {
+      height: auto;
+      padding: 20px 10px 40px 10px;
+      .tit {
+        margin-bottom: 20px;
+      }
+      .con {
+        ul {
+          height: auto;
+          padding-bottom: 10px;
+          li.li1 {
+            font-size: 14px;
+          }
+          li.li2 {
+            font-size: 12px;
+            padding: 0 20px;
+          }
+        }
+        ul.ul1,
+        ul.ul2,
+        ul.ul3,
+        ul.ul4 {
+          li.li1 span {
+            width: 80px;
+            height: 80px;
+            background-size: 80px 160px;
+          }
+          &:hover {
+            li.li1 span {
+              background-position: 0 -80px;
+            }
+          }
+        }
+        ul.ul3,
+        ul.ul4 {
+          li.li1 b{
+            width: 100px;
+          }
+        }
+        ul.ul1,
+        ul.ul4 {
+          background-color: #fafafa;
+        }
+      }
+    }
+    .school-4 {
+      height: auto;
+      padding: 20px 20px 40px 20px;
+      .tit {
+        margin-bottom: 20px;
+      }
+      .con {
+        font-size: 14px;
+      }
+      .school-swiper {
+        padding: 20px;
+        .swiper-slide {
+          width: 300px;
+        }
+      }
+    }
+  }
+  .swiper-button-prev {
+    left: 0;
+  }
+  .swiper-button-next {
+    right: 0;
+  }
+}

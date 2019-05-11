@@ -1,0 +1,58 @@
+.about {
+  .banner {
+    height: 396px;
+    padding-top: 77px;
+    background: url("./images/cbanner_about.jpg") center 0 no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    h2 {
+      width: 920px;
+      font-size: 60px;
+      text-align: center;
+      color: #fff;
+    }
+  }
+  .about-1 {
+    height: 862px;
+    background: url("./images/about_1.jpg") center 0 no-repeat;
+    img {
+      display: none;
+    }
+  }
+  .about-2 {
+    height: 652px;
+    background: url("./images/about_2.jpg") center 0 no-repeat;
+    img {
+      display: none;
+    }
+  }
+  .about-3 {
+    height: 695px;
+    background: url("./images/about_3.jpg") center 0 no-repeat;
+    img {
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .about .banner {
+    height: 340px;
+  }
+  .about .banner h2 {
+    width: 100%;
+    font-size: 20px;
+  }
+  .about .about-1,
+  .about .about-2,
+  .about .about-3 {
+    width: 100%;
+    height: auto;
+    background: none;
+    img {
+      width: 100%;
+      display: block;
+    }
+  }
+}
