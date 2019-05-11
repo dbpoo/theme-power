@@ -10,25 +10,18 @@
  */
 
 ?>
-
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<?php twentynineteen_post_thumbnail(); ?>
-	<div class="post-info">
-		<header class="entry-header">
-			<?php
-			if (is_sticky() && is_home() && !is_paged()) {
-				printf('<span class="sticky-post">%s</span>', _x('Featured', 'post', 'twentynineteen'));
-			}
-			the_title(sprintf('<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url(get_permalink())), '</a></h2>');
-			?>
-		</header><!-- .entry-header -->
-
-		<div class="entry-content">
-			<?php the_excerpt(); ?>
-		</div><!-- .entry-content -->
-
-		<footer class="entry-footer">
-			<?php twentynineteen_entry_footer(); ?>
-		</footer><!-- .entry-footer -->
+<div class="item">
+	<div class="item-img">
+		<?php twentynineteen_post_thumbnail(); ?>
 	</div>
-</article><!-- #post-${ID} -->
+	<ul>
+		<li class="li1">
+				<?php
+				the_title(sprintf('<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url(get_permalink())), '</a></h2>');
+				?>
+			<p><?php the_excerpt(); ?></p>
+		</li>
+		<li class="li2"><?php the_date_xml(); ?></li>
+	</ul>
+	<span class="arrow"></span>
+</div>
