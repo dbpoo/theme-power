@@ -19,9 +19,7 @@ get_header();
 
 <div class="home">
   <div class="banner-swiper">
-    <?php
-    echo do_shortcode('[smartslider3 slider=1]');
-    ?>
+    <?php echo do_shortcode('[metaslider id="73"]'); ?>
     <div class="banner-btn">
       <a href="javascript:;" class="btn-1 hvr-grow"></a>
       <a href="javascript:;" class="btn-2 hvr-grow"></a>

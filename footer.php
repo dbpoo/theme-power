@@ -46,4 +46,5 @@
 </div>
 </div><!-- #app -->
 </body>
+<?php wp_footer(); ?>
 </html>
