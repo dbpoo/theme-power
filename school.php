@@ -114,6 +114,14 @@ get_header();
 			</span>
 		</div>
 		<div class="con">新能源数权经济发展中心由国研智库创新科学园与青藤链盟发起设立，联合中国教育智库、交通传思智库、新能区块链共同筹备，构建数权经济（数字经济3.0）理论创新与实践创新平台。</div>
+		<div class="school-swiper">
+			<div class="swiper-container schoolSwiper">
+				<?php echo do_shortcode('[metaslider id="92"]'); ?>
+				<!-- Add Arrows -->
+				<div class="swiper-button-next"></div>
+				<div class="swiper-button-prev"></div>
+			</div>
+		</div>
 	</div>
 </div>
 

@@ -23,6 +23,10 @@ get_header();
       <?php echo do_shortcode('[metaslider id="73"]'); ?>
       <div class="swiper-pagination"></div>
     </div>
+    <div class="swiper-container bannerSwiperM">
+      <?php echo do_shortcode('[metaslider id="101"]'); ?>
+      <div class="swiper-pagination swiper-paginationM"></div>
+    </div>
 
     <div class="banner-btn">
       <a href="javascript:;" class="btn-1 hvr-grow"></a>
@@ -39,6 +43,7 @@ get_header();
       </div>
     </div>
   </div>
+
   <div class="col-1">
     <div class="tit">
       <span>
@@ -55,7 +60,7 @@ get_header();
       <img src="<?php bloginfo('template_url') ?>/images/con_1m.png" alt="">
     </div>
     <div class="btn">
-      <router-link to="/solutions"></router-link>
+      <a href="./solutions"></a>
     </div>
   </div>
   <div class="col-5">
@@ -148,7 +153,12 @@ get_header();
     </div>
     <div class="event">
       <div class="event-c">
-
+        <div class="swiper-container eventSwiper">
+          <?php echo do_shortcode('[metaslider id="85"]'); ?>
+          <!-- Add Arrows -->
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
       </div>
     </div>
   </div>

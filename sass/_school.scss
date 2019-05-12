@@ -206,16 +206,8 @@
       position: relative;
       .swiper-slide {
         width: 687px;
-        ul {
-          li.li1 {
-            width: 100%;
-            img {
-              width: 100%;
-            }
-          }
-          li.li2 {
-            display: none;
-          }
+        img {
+          width: 100%;
         }
       }
       .swiper-slide-prev,

@@ -3,9 +3,75 @@
     position: relative;
     .bannerSwiper {
       display: block;
+      .swiper-slide {
+        height: 900px;
+        overflow: hidden;
+        text-align: center;
+        img {
+          width: 100%;
+          height: 100%;
+        }
+        .caption-wrap {
+          width: 100%;
+          position: absolute;
+          top: 40%;
+          left: 0;
+          transform: translate(0, -70%);
+          color: #fff;
+          font-size: 30px;
+          text-align: center;
+          letter-spacing: 15px;
+        }
+      }
+      .swiper-pagination {
+        bottom: 33px;
+      }
+      .swiper-pagination-bullet {
+        width: 17px;
+        height: 17px;
+        margin: 0 10px;
+        background: #c0c0c0;
+        opacity: 1;
+      }
+      .swiper-pagination-bullet-active {
+        background: #2fccf6;
+      }
     }
     .bannerSwiperM {
       display: none;
+      .swiper-slide {
+        height: 600px;
+        overflow: hidden;
+        text-align: center;
+        img {
+          width: 100%;
+          height: 100%;
+        }
+        .caption-wrap {
+          width: 100%;
+          position: absolute;
+          top: 35%;
+          left: 0;
+          transform: translate(0, -70%);
+          color: #fff;
+          font-size: 18px;
+          text-align: center;
+          letter-spacing: 8px;
+        }
+      }
+      .swiper-pagination {
+        bottom: 33px;
+      }
+      .swiper-pagination-bullet {
+        width: 8px;
+        height: 8px;
+        margin: 0 5px;
+        background: #c0c0c0;
+        opacity: 1;
+      }
+      .swiper-pagination-bullet-active {
+        background: #2fccf6;
+      }
     }
     .banner-btn,
     .banner-btn-m {
@@ -427,6 +493,13 @@
 }
 
 @media screen and (max-width: 1440px) {
+  .home .banner-swiper {
+    .bannerSwiper {
+      .swiper-slide {
+        height: 700px;
+      }
+    }
+  }
   .home .banner-swiper .banner-btn {
     width: 900px;
     margin-left: -450px;
@@ -466,10 +539,6 @@
       width: 40%;
       height: 140px;
     }
-  }
-  .home .banner-swiper .slide-img .slide-info {
-    font-size: 12px;
-    letter-spacing: 8px;
   }
   .home .banner-swiper .swiper-pagination-bullet {
     width: 8px;

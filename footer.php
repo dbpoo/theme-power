@@ -22,19 +22,7 @@
 			<li class="li3">010-64268933</li>
 		</ul>
 		<ul class="ul2">
-			<li class="li1">友情链接</li>
-			<li class="li2">
-				<a href="javascript:;">国研智库</a>
-			</li>
-			<li class="li2">
-				<a href="javascript:;">清华X-lab</a>
-			</li>
-			<li class="li2">
-				<a href="javascript:;">中数能研究院</a>
-			</li>
-			<li class="li2">
-				<a href="javascript:;">中简律师事务所</a>
-			</li>
+			<?php wp_list_bookmarks(); ?>
 		</ul>
 		<ul class="ul3">
 			<li class="li1">全媒体平台</li>
@@ -47,4 +35,5 @@
 </div><!-- #app -->
 </body>
 <?php wp_footer(); ?>
+
 </html>
