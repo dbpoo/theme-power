@@ -1,4 +1,14 @@
 $(function() {
+  // 首页轮播
+  var bannerSwiper = new Swiper ('.bannerSwiper', {
+    loop: true,
+    autoplay: true,
+    pagination: {
+      el: '.swiper-pagination',
+    },
+  })   
+
+  // 首页-地图
   $(".light").click(function() {
     $(".light")
       .children(".sp2")
