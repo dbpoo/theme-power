@@ -49,9 +49,6 @@
             &:hover {
               color: #29acf1;
             }
-            &:last-child {
-              margin-right: 0;
-            }
           }
         }
         li.current-menu-item {
@@ -83,6 +80,7 @@
         left: 0;
         width: 100%;
         height: 100vh;
+        display: none;
         background-color: rgba(0, 0, 0, 0.8);
         ul.menu {
           display: flex;

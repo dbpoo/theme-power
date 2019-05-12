@@ -61,14 +61,27 @@ get_header();
       </span>
     </div>
     <div class="more">
-      <a href="./category/news/">更多新闻》</a>
+      <a href="./archives/category/news/">更多新闻》</a>
     </div>
     <div class="news">
       <div class="news-c">
         <div class="newsc-img">
           <ul>
-            <li><a href="javascript:;"><img src="http://www.xinnengboan.com:8080/api/wp-content/uploads/2019/05/潍柴.jpg" alt=""></a></li>
-            <li class="li2"><a href="javascript:;">复牌!江山控股4.13亿元向国投电力出售湖州100兆瓦太阳能发电厂</a></li>
+            <?php
+            $sticky = get_option('sticky_posts');
+            $args = array(
+              'posts_per_page' => 1,
+              'post__in'  => $sticky,
+              'ignore_sticky_posts' => 1
+            );
+            $query = new WP_Query($args);
+            if (isset($sticky[0])) {
+              ?>
+              <li><?php twentynineteen_post_thumbnail(); ?></li>
+              <li class="li2"><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a></li>
+            <?php
+          }
+          ?>
           </ul>
         </div>
         <div class="newsc-list">
@@ -78,7 +91,7 @@ get_header();
             'post_status' => 'publish' // Show only the published posts
           ));
           foreach ($recent_posts as $post) {
-            echo '<div class="item"><dl><dd class="dd1">'. date('d',strtotime($post["post_date"])) .'</dd><dd class="dd2">'. date('Y-m',strtotime($post["post_date"])) .'</dd></dl><ul><li class="li1"><a href="' . get_permalink($post["ID"]) . '">' . esc_html($post["post_title"]) . '</a></li><li class="li2">' . wp_trim_words($post["post_content"], 50) . '</li></ul></div>';
+            echo '<div class="item"><dl><dd class="dd1">' . date('d', strtotime($post["post_date"])) . '</dd><dd class="dd2">' . date('Y-m', strtotime($post["post_date"])) . '</dd></dl><ul><li class="li1"><a href="' . get_permalink($post["ID"]) . '">' . esc_html($post["post_title"]) . '</a></li><li class="li2">' . wp_trim_words($post["post_content"], 50) . '</li></ul></div>';
           }
           wp_reset_query();
           ?>

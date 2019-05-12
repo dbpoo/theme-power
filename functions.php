@@ -9,6 +9,10 @@
  * @since 1.0.0
  */
 
+add_filter('show_admin_bar', '__return_false');
+//开启wordpress友情链接管理
+add_filter( 'pre_option_link_manager_enabled', '__return_true' );
+
 /**
  * Twenty Nineteen only works in WordPress 4.7 or later.
  */
