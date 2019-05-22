@@ -238,7 +238,7 @@ add_action('after_setup_theme', 'twentynineteen_content_width', 0);
  */
 function twentynineteen_scripts()
 {
-	wp_enqueue_style('twentynineteen-style', get_stylesheet_uri(), array(), '1.1', false);
+	wp_enqueue_style('twentynineteen-style', get_stylesheet_uri(), array(), '1.2', false);
 
 	wp_style_add_data('twentynineteen-style', 'rtl', 'replace');
 
@@ -251,7 +251,7 @@ function twentynineteen_scripts()
 	// wp_enqueue_style( 'twentynineteen-swiper-style', get_template_directory_uri() . '/swiper.min.css', array(), wp_get_theme()->get( 'Version' ), 'swiper' );
 	wp_enqueue_script('jquery-js', get_theme_file_uri('/js/jquery.min.js'), array(), '1.1', false);
 	wp_enqueue_script('swiper-js', get_theme_file_uri('/js/swiper.min.js'), array(), '1.1', false);
-	wp_enqueue_script('power-js', get_theme_file_uri('/js/power.js'), array(), '1.1', true);
+	wp_enqueue_script('power-js', get_theme_file_uri('/js/power.js'), array(), '1.2', true);
 
 	if (is_singular() && comments_open() && get_option('thread_comments')) {
 		wp_enqueue_script('comment-reply');

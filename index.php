@@ -132,7 +132,7 @@ get_header();
           <ul>
             <?php
             $tag_hytop = '行业资讯';
-            $args_hyntop = array(
+            $args_hytop = array(
               'tag' => $tag_hytop,
               'showposts'  => 1,
               'ignore_sticky_posts' => 1
