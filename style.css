@@ -734,12 +734,27 @@ html::-webkit-scrollbar-thumb {
   position: relative;
 }
 
-.home .col-5 .more {
+.home .col-5 .tab {
   max-width: 1200px;
-  margin: 0 auto;
-  text-align: right;
-  padding-top: 20px;
-  font-size: 20px;
+  margin: 0 auto 50px auto;
+  line-height: 35px;
+  font-size: 24px;
+  border-bottom: 1px solid #8d8d8d;
+  display: flex;
+  justify-content: space-between;
+}
+
+.home .col-5 .tab .tab-link a {
+  width: 126px;
+  height: 35px;
+  text-align: center;
+  color: #000;
+  display: inline-block;
+}
+
+.home .col-5 .tab .tab-link a.on {
+  color: #fff;
+  background-color: #29acf1;
 }
 
 .home .col-5 .morem {
@@ -772,7 +787,6 @@ html::-webkit-scrollbar-thumb {
 }
 
 .home .col-5 .news .news-c {
-  padding-top: 20px;
   display: flex;
   justify-content: space-between;
 }

@@ -8,8 +8,8 @@ $(function() {
     }
   });
 
-   // 首页移动 - 顶部轮播
-   var bannerSwiperM = new Swiper(".bannerSwiperM", {
+  // 首页移动 - 顶部轮播
+  var bannerSwiperM = new Swiper(".bannerSwiperM", {
     loop: true,
     autoplay: true,
     pagination: {
@@ -81,5 +81,15 @@ $(function() {
     $(".swith-on").show();
     $(".swith-off").hide();
     $(".nav-menu").hide();
+  });
+
+  $(".tab-link a").click(function() {
+    var index = $(this).index();
+    $(this).addClass('on').siblings().removeClass('on');
+    $(".news .news-c")
+      .eq(index)
+      .show()
+      .siblings()
+      .hide();
   });
 });

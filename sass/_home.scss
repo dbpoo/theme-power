@@ -369,12 +369,27 @@
       margin-bottom: 20px;
       position: relative;
     }
-    .more {
+    .tab {
       max-width: 1200px;
-      margin: 0 auto;
-      text-align: right;
-      padding-top: 20px;
-      font-size: 20px;
+      margin: 0 auto 50px auto;
+      line-height: 35px;
+      font-size: 24px;
+      border-bottom: 1px solid #8d8d8d;
+      display: flex;
+      justify-content: space-between;
+      .tab-link {
+        a {
+          width: 126px;
+          height: 35px;
+          text-align: center;
+          color: #000;
+          display: inline-block;
+        }
+        a.on {
+          color: #fff;
+          background-color: #29acf1;
+        }
+      }
     }
     .morem {
       display: none;
@@ -401,7 +416,6 @@
         border-bottom: 1px solid #8d8d8d;
       }
       .news-c {
-        padding-top: 20px;
         display: flex;
         justify-content: space-between;
         .newsc-img {

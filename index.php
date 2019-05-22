@@ -69,46 +69,117 @@ get_header();
         <i>新闻动态</i>
       </span>
     </div>
-    <div class="more">
-      <a href="./?cat=1">更多新闻》</a>
+    <div class="tab">
+      <div class="tab-link">
+        <a href="javascript:;" class="on">新能动态</a>
+        <a href="javascript:;" >行业资讯</a>
+      </div>
+      <a href="./?cat=1" class="more">更多新闻》</a>
     </div>
     <div class="news">
       <div class="news-c">
         <div class="newsc-img">
           <ul>
             <?php
-            $sticky = get_option('sticky_posts');
-            $args = array(
-              'posts_per_page' => 1,
-              'post__in'  => $sticky,
+            $tag_xntop = '新能动态';
+            $args_xntop = array(
+              'tag' => $tag_xntop,
+              'showposts'  => 1,
               'ignore_sticky_posts' => 1
             );
-            $query = new WP_Query($args);
-            if (isset($sticky[0])) {
-              ?>
-              <li><?php twentynineteen_post_thumbnail(); ?></li>
-              <li class="li2"><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a></li>
-            <?php
+            $query_xntop = new WP_Query($args_xntop);
+            if ($query_xntop->have_posts()) {
+              while ($query_xntop->have_posts()) : $query_xntop->the_post();
+                ?>
+                <li><?php twentynineteen_post_thumbnail(); ?></li>
+                <li class="li2"><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a></li>
+              <?php
+            endwhile;
           }
+          wp_reset_query();
           ?>
           </ul>
         </div>
         <div class="newsc-list">
           <?php
-          $recent_posts = wp_get_recent_posts(array(
-            'numberposts' => 3, // Number of recent posts thumbnails to display
-            'post_status' => 'publish' // Show only the published posts
-          ));
-          foreach ($recent_posts as $post) {
-            echo '<div class="item"><dl><dd class="dd1">' . date('d', strtotime($post["post_date"])) . '</dd><dd class="dd2">' . date('Y-m', strtotime($post["post_date"])) . '</dd></dl><ul><li class="li1"><a href="' . get_permalink($post["ID"]) . '">' . esc_html($post["post_title"]) . '</a></li><li class="li2">' . wp_trim_words($post["post_content"], 50) . '</li></ul></div>';
+          $tag_xn = '新能动态';
+          $args_xn = array(
+            'tag' => $tag_xn,
+            'showposts'  => 3,
+            'caller_get_posts' => 1
+          );
+          $query_xn = new WP_Query($args_xn);
+          while ($query_xn->have_posts()) : $query_xn->the_post();
+            ?>
+            <div class="item">
+              <dl>
+                <dd class="dd1"><?php the_time('d'); ?></dd>
+                <dd class="dd2"><?php echo get_the_date('Y-m'); ?></dd>
+              </dl>
+              <ul>
+                <li class="li1"><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a></li>
+                <li class="li2"><?php the_excerpt(); ?></li>
+              </ul>
+            </div>
+          <?php
+        endwhile;
+        wp_reset_query();
+        ?>
+        </div>
+      </div>
+      <div class="news-c" style="display:none;">
+        <div class="newsc-img">
+          <ul>
+            <?php
+            $tag_hytop = '行业资讯';
+            $args_hyntop = array(
+              'tag' => $tag_hytop,
+              'showposts'  => 1,
+              'ignore_sticky_posts' => 1
+            );
+            $query_hytop = new WP_Query($args_hytop);
+            if ($query_hytop->have_posts()) {
+              while ($query_hytop->have_posts()) : $query_hytop->the_post();
+                ?>
+                <li><?php twentynineteen_post_thumbnail(); ?></li>
+                <li class="li2"><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a></li>
+              <?php
+            endwhile;
           }
           wp_reset_query();
           ?>
+          </ul>
+        </div>
+        <div class="newsc-list">
+          <?php
+          $tag_hy = '行业资讯';
+          $args_hy = array(
+            'tag' => $tag_hy,
+            'showposts'  => 3,
+            'caller_get_posts' => 1
+          );
+          $query_hy = new WP_Query($args_hy);
+          while ($query_hy->have_posts()) : $query_hy->the_post();
+            ?>
+            <div class="item">
+              <dl>
+                <dd class="dd1"><?php the_time('d'); ?></dd>
+                <dd class="dd2"><?php echo get_the_date('Y-m'); ?></dd>
+              </dl>
+              <ul>
+                <li class="li1"><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a></li>
+                <li class="li2"><?php the_excerpt(); ?></li>
+              </ul>
+            </div>
+          <?php
+        endwhile;
+        wp_reset_query();
+        ?>
         </div>
       </div>
     </div>
     <div class="morem">
-      <a href=""></a>
+      <a href="./?cat=1"></a>
     </div>
   </div>
   <div class="col-2">
