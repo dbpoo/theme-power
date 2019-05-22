@@ -19,7 +19,10 @@ get_header();
 	<div class="list">
 		<div class="tit">
 			<span>
-				<i>新闻资讯</i>
+				<i class="list-tab">
+					<a href="?tag=新能动态" class="<?php echo single_tag_title('', false) == '新能动态' ? 'on' : '' ?>">新能动态</a>
+					<a href="?tag=行业资讯" class="<?php echo single_tag_title('', false) == '行业资讯' ? 'on' : '' ?>">行业资讯</a>
+				</i>
 			</span>
 		</div>
 		<?php if (have_posts()) : ?>

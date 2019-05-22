@@ -19,6 +19,21 @@
     padding-top: 100px;
     padding-bottom: 200px;
     background: url("./images/listbg.jpg") center 0 repeat-y;
+    .tit {
+      a {
+        width: 146px;
+        height: 40px;
+        line-height: 40px;
+        font-size: 28px;
+        display: inline-block;
+        text-align: center;
+        color: #333;
+      }
+      a.on {
+        color: #fff;
+        background-color: #29acf1;
+      }
+    }
     .item {
       background-color: #fff;
       box-shadow: 5px 5px 8px 1px rgba(102, 102, 102, 0.5);
@@ -93,13 +108,14 @@
 }
 
 .wp-pagenavi {
-  a{
+  a {
     height: 26px;
     line-height: 26px;
     display: inline-block;
     margin: 0 5px;
   }
-  .previouspostslink,.nextpostslink{
+  .previouspostslink,
+  .nextpostslink {
     width: 26px;
     background-color: #29acf1;
     color: #fff;

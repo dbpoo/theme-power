@@ -1400,6 +1400,21 @@ html::-webkit-scrollbar-thumb {
   background: url("./images/listbg.jpg") center 0 repeat-y;
 }
 
+.list-wrapper .list .tit a {
+  width: 146px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 28px;
+  display: inline-block;
+  text-align: center;
+  color: #333;
+}
+
+.list-wrapper .list .tit a.on {
+  color: #fff;
+  background-color: #29acf1;
+}
+
 .list-wrapper .list .item {
   background-color: #fff;
   box-shadow: 5px 5px 8px 1px rgba(102, 102, 102, 0.5);
@@ -1479,7 +1494,8 @@ html::-webkit-scrollbar-thumb {
   margin: 0 5px;
 }
 
-.wp-pagenavi .previouspostslink, .wp-pagenavi .nextpostslink {
+.wp-pagenavi .previouspostslink,
+.wp-pagenavi .nextpostslink {
   width: 26px;
   background-color: #29acf1;
   color: #fff;
