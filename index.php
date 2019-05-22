@@ -70,7 +70,7 @@ get_header();
       </span>
     </div>
     <div class="more">
-      <a href="./archives/category/news/">更多新闻》</a>
+      <a href="./?cat=1">更多新闻》</a>
     </div>
     <div class="news">
       <div class="news-c">

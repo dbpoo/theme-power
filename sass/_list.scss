@@ -92,6 +92,20 @@
   }
 }
 
+.wp-pagenavi {
+  a{
+    height: 26px;
+    line-height: 26px;
+    display: inline-block;
+    margin: 0 5px;
+  }
+  .previouspostslink,.nextpostslink{
+    width: 26px;
+    background-color: #29acf1;
+    color: #fff;
+  }
+}
+
 @media screen and (max-width: 640px) {
   .list-wrapper .banner {
     height: 340px;

@@ -1458,6 +1458,19 @@ html::-webkit-scrollbar-thumb {
   background: url("./images/arrowhover.png") 0 0 no-repeat;
 }
 
+.wp-pagenavi a {
+  height: 26px;
+  line-height: 26px;
+  display: inline-block;
+  margin: 0 5px;
+}
+
+.wp-pagenavi .previouspostslink, .wp-pagenavi .nextpostslink {
+  width: 26px;
+  background-color: #29acf1;
+  color: #fff;
+}
+
 @media screen and (max-width: 640px) {
   .list-wrapper .banner {
     height: 340px;
@@ -1676,105 +1689,70 @@ html::-webkit-scrollbar-thumb {
   margin-bottom: 15px;
 }
 
+.download-wrapper .download-2,
+.download-wrapper .download-3 {
+  height: 537px;
+  padding-top: 135px;
+}
+
+.download-wrapper .download-2 .h2tit,
+.download-wrapper .download-3 .h2tit {
+  font-size: 60px;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.download-wrapper .download-2 .con,
+.download-wrapper .download-3 .con {
+  font-size: 28px;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+.download-wrapper .download-2 .btn,
+.download-wrapper .download-3 .btn {
+  text-align: center;
+}
+
 .download-wrapper .download-2 {
-  height: 786px;
   background: url("./images/downloadbg_2.jpg") center 0 no-repeat;
-  padding-top: 60px;
 }
 
-.download-wrapper .download-2 .tit {
-  color: #fff;
-}
-
-.download-wrapper .download-2 .type {
-  max-width: 1200px;
-  margin: 0 auto;
-  position: relative;
-}
-
-.download-wrapper .download-2 .type .client {
-  display: flex;
-  justify-content: space-between;
-}
-
-.download-wrapper .download-2 .type .client a {
+.download-wrapper .download-2 a {
+  width: 296px;
+  height: 65px;
   display: inline-block;
-  font-size: 24px;
-  color: #fff;
-  line-height: 72px;
-  position: relative;
+  background: url("./images/download_btn1.png") 0 0 no-repeat;
 }
 
-.download-wrapper .download-2 .type .client a i {
-  width: 72px;
-  height: 72px;
+.download-wrapper .download-3 {
+  background: url("./images/downloadbg_3.jpg") center 0 no-repeat;
+  margin-top: 110px;
+}
+
+.download-wrapper .download-3 a {
+  width: 296px;
+  height: 65px;
   display: inline-block;
-  overflow: hidden;
-  background-color: #fff;
-  border-radius: 50%;
+  background: url("./images/download_btn2.png") 0 0 no-repeat;
   position: relative;
-  vertical-align: top;
-  margin-right: 10px;
 }
 
-.download-wrapper .download-2 .type .client a.icon-ios span {
-  width: 249px;
-  height: 211px;
-  position: absolute;
-  top: -50%;
-  left: 0;
-  margin: -20px 0 0 -10px;
-  background: url("./images/download_qr.jpg") center 0 no-repeat;
+.download-wrapper .download-3 a span {
+  width: 301px;
+  height: 254px;
   display: none;
+  background: url("./images/download_qr.jpg") 0 0 no-repeat;
+  position: absolute;
+  top: -108px;
+  left: 0;
   z-index: 99;
 }
 
-.download-wrapper .download-2 .type .client a.icon-ios:hover span {
+.download-wrapper .download-3 a:hover span {
   display: block;
-}
-
-.download-wrapper .download-2 .type .client a.icon-android {
-  z-index: 1;
-}
-
-.download-wrapper .download-2 .type .client a.icon-android span {
-  width: 249px;
-  height: 211px;
-  position: absolute;
-  top: -50%;
-  left: 0;
-  margin: -20px 0 0 -10px;
-  background: url("./images/download_qr.jpg") center 0 no-repeat;
-  display: none;
-  z-index: 99;
-}
-
-.download-wrapper .download-2 .type .client a.icon-android:hover span {
-  display: block;
-}
-
-.download-wrapper .download-2 .type .client a.icon-window .iconup,
-.download-wrapper .download-2 .type .client a.icon-macos .iconup {
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
-.download-wrapper .download-2 .type .client a.icon-window .icondown,
-.download-wrapper .download-2 .type .client a.icon-macos .icondown {
-  position: absolute;
-  top: 72px;
-  left: 0;
-}
-
-.download-wrapper .download-2 .type .client a.icon-window:hover .iconup,
-.download-wrapper .download-2 .type .client a.icon-macos:hover .iconup {
-  top: -72px;
-}
-
-.download-wrapper .download-2 .type .client a.icon-window:hover .icondown,
-.download-wrapper .download-2 .type .client a.icon-macos:hover .icondown {
-  top: 0px;
 }
 
 @media screen and (max-width: 640px) {
@@ -1785,10 +1763,6 @@ html::-webkit-scrollbar-thumb {
   .download-wrapper .banner h2 {
     width: 100%;
     font-size: 20px;
-  }
-  .download-wrapper .banner .download-btn a {
-    width: 200px;
-    height: 45px;
   }
   .download-wrapper .download-1 {
     height: auto;
@@ -1804,47 +1778,22 @@ html::-webkit-scrollbar-thumb {
     font-size: 14px;
     text-indent: 28px;
   }
-  .download-wrapper .download-2 {
-    height: 420px;
-    background: url("./images/downloadbg_m.jpg") center 0 no-repeat;
-    background-size: cover;
-    padding-top: 30px;
+  .download-wrapper .download-2,
+  .download-wrapper .download-3 {
+    height: 400px;
+    padding-top: 80px;
   }
-  .download-wrapper .download-2 .tit {
-    margin-bottom: 10px;
+  .download-wrapper .download-2 .h2tit,
+  .download-wrapper .download-3 .h2tit {
+    font-size: 30px;
   }
-  .download-wrapper .download-2 .type .client {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 30px 30px 0 30px;
+  .download-wrapper .download-2 .con,
+  .download-wrapper .download-3 .con {
+    font-size: 14px;
+    padding: 0 30px;
   }
-  .download-wrapper .download-2 .type .client a {
-    width: 50%;
-    font-size: 16px;
-    line-height: 30px;
-  }
-  .download-wrapper .download-2 .type .client a i {
-    width: 30px;
-    height: 30px;
-  }
-  .download-wrapper .download-2 .type .client a i img {
-    width: 100%;
-  }
-  .download-wrapper .download-2 .type .client a.icon-ios:hover span {
-    display: none;
-  }
-  .download-wrapper .download-2 .type .client a.icon-android:hover span {
-    display: none;
-  }
-  .download-wrapper .download-2 .type .client a.icon-window,
-  .download-wrapper .download-2 .type .client a.icon-macos {
-    display: none;
-  }
-}
-
-@media screen and (max-width: 320px) {
-  .download-wrapper .download-2 .type .client a {
-    font-size: 12px;
+  .download-wrapper .download-3 {
+    margin-top: 50px;
   }
 }
 
