@@ -958,7 +958,10 @@ html::-webkit-scrollbar-thumb {
   .home .col-5 .tit {
     margin-bottom: 20px;
   }
-  .home .col-5 .more {
+  .home .col-5 .tab {
+    margin-bottom: 20px;
+  }
+  .home .col-5 .tab .more {
     display: none;
   }
   .home .col-5 .morem {
@@ -1514,7 +1517,16 @@ html::-webkit-scrollbar-thumb {
     background: none;
   }
   .list-wrapper .list .tit {
-    display: none;
+    margin-bottom: 10px;
+  }
+  .list-wrapper .list .tit span i {
+    padding: 10px;
+  }
+  .list-wrapper .list .tit a {
+    width: 110px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 18px;
   }
   .list-wrapper .list .item {
     margin-bottom: 0;
@@ -1822,8 +1834,33 @@ html::-webkit-scrollbar-thumb {
     font-size: 14px;
     padding: 0 30px;
   }
+  .download-wrapper .download-2 a {
+    width: 182px;
+    height: 40px;
+    display: inline-block;
+    background: url("./images/download_btn1.png") 0 0 no-repeat;
+    background-size: contain;
+  }
   .download-wrapper .download-3 {
-    margin-top: 50px;
+    margin-top: 20px;
+  }
+  .download-wrapper .download-3 a {
+    width: 182px;
+    height: 40px;
+    display: inline-block;
+    background: url("./images/download_btn2.png") 0 0 no-repeat;
+    background-size: contain;
+  }
+  .download-wrapper .download-3 a span {
+    width: 301px;
+    height: 254px;
+    display: none;
+    background: url("./images/download_qr.jpg") 0 0 no-repeat;
+    position: absolute;
+    top: -108px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    z-index: 99;
   }
 }
 

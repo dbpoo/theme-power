@@ -125,6 +125,7 @@
         }
       }
     }
+    
     .download-2,
     .download-3 {
       height: 400px;
@@ -137,8 +138,35 @@
         padding: 0 30px;
       }
     }
+    .download-2 {
+      a {
+        width: 182px;
+        height: 40px;
+        display: inline-block;
+        background: url("./images/download_btn1.png") 0 0 no-repeat;
+        background-size: contain;
+      }
+    }
     .download-3 {
-      margin-top: 50px;
+      margin-top: 20px;
+      a {
+        width: 182px;
+        height: 40px;
+        display: inline-block;
+        background: url("./images/download_btn2.png") 0 0 no-repeat;
+        background-size: contain;
+        span {
+          width: 301px;
+          height: 254px;
+          display: none;
+          background: url("./images/download_qr.jpg") 0 0 no-repeat;
+          position: absolute;
+          top: -108px;
+          left: 50%;
+          transform: translate(-50%,0);
+          z-index: 99;
+        }
+      }
     }
   }
 }

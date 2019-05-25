@@ -586,8 +586,11 @@
     .tit {
       margin-bottom: 20px;
     }
-    .more {
-      display: none;
+    .tab {
+      margin-bottom: 20px;
+      .more {
+        display: none;
+      }
     }
     .morem {
       display: block;
